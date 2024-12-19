@@ -6,7 +6,8 @@ FROM node:16-alpine as build
 WORKDIR /app
 COPY package.json .
 # RUN npm install --legacy-peer-deps
-RUN rm -rf node_modules package-lock.json && npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps
+RUN npm install ajv@6.12.6 ajv-keywords@3.5.2
 COPY . .
 RUN npm run build
 
