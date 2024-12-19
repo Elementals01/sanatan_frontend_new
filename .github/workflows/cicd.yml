@@ -1,0 +1,30 @@
+name: Deploy Node Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+      - name: Login to docker hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+      - name: Build Docker Image
+        run: docker build -t sunny01elementals/sanatandharamaya --build-arg REACT_APP_ENV='production' --build-arg REACT_APP_SERVER='https://api.sanatandharmaya.com/api/' .
+      - name: Publish Image to docker hub
+        run: docker push sunny01elementals/sanatandharamaya:latest
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Pull image from docker hub
+        run: docker pull sunny01elementals/sanatandharamaya:latest
+      - name: Delete old container
+        run: docker rm -f sanatandharamaya-container
+      - name: Run Docker Container
+        run: docker run -d -p 3000:80 --name sanatandharamaya-container sunny01elementals/sanatandharamaya
