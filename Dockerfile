@@ -1,9 +1,12 @@
-FROM node:alpine3.18 as build
+# FROM node:alpine3.18 as build
+
+FROM node:18-alpine3.18 as build
 
 # build react app
 WORKDIR /app
 COPY package.json .
-RUN npm install --legacy-peer-deps
+# RUN npm install --legacy-peer-deps
+RUN rm -rf node_modules package-lock.json && npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 
