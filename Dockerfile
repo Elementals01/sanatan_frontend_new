@@ -1,6 +1,6 @@
 # FROM node:alpine3.18 as build
 
-FROM node:18-alpine3.18 as build
+FROM node:16-alpine as build
 
 # build react app
 WORKDIR /app
