@@ -1,0 +1,125 @@
+*{
+    text-decoration: none;
+}
+.nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    max-height: 78px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.search{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.nav-items{
+    margin: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+.sidebar{
+    max-width: 258px;
+    margin-right:2px;
+    position: absolute;
+    background: white;
+    box-shadow: 25px 0px 14px -29px rgba(0, 0, 0, 0.253);
+}
+.menu-items{
+    background-color: white;
+    padding: 16px 20px;
+    list-style: none;
+  
+
+}
+.sidebar-tabs{
+    display: flex;
+    color: #8F95B2;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 12px;
+    width: 176px;
+    align-items: center;
+    max-height: 24px;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sidebar-tabs div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.active .sidebar-tabs img{
+    filter: brightness(0) invert(1);
+}
+
+.sidebar-tabs span{
+font-family: "Lato",sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+margin-left: 1em;
+}
+.active .sidebar-tabs img{
+    filter: brightness(0) invert(1);
+}
+
+
+.active .sidebar-tabs{
+    background-color:rgba(251, 168, 59, 1);
+    color: white;
+
+   
+   
+}
+.active .sidebar-tabs span{
+    color: white;
+}
+.logo{
+    margin-top: 24px;
+    height: 40px;
+    margin-left: 54px;
+}
+
+.blursearch{
+    align-items: center;
+    display: flex;
+    background-color: #8738d110;
+    border-radius: 8px;
+    padding-right: 5px;
+}
+
+.bell-icon, .language-icon{
+
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+.langbtn{
+    display: flex;
+    flex-wrap: nowrap;
+}

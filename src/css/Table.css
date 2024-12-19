@@ -1,0 +1,146 @@
+.cardhead{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+
+
+}
+
+.STATUS_INACTIVE{
+    color: #6C5DD3!important;
+	background-color:#6d5dd334!important;
+}
+.STATUS_ACTIVE{
+    color:#FF754C!important;
+	background-color:#FFEBF6!important;
+}
+
+
+th,td{
+    border: none;
+    margin: 0px;
+    text-align: left!important;
+    padding-right:11px;
+    width: fit-content!important;
+   
+}
+th{
+    svg{
+        margin-left: 4px;
+    }
+}
+
+
+tr{
+    border-bottom: dashed #E6E8F0 1.5px;
+    min-height: 88px;
+    height: 88px;
+}
+
+td{
+   
+    overflow: hidden;
+        text-overflow: ellipsis;
+        
+    *{
+        font-size: 14px!important;
+      
+        text-overflow: ellipsis;
+        min-width: auto;
+        
+    }
+}
+thead{
+
+    max-height: 48px!important;
+    height: 48px!important;
+    background-color: hsla(34, 96%, 61%, 0.204);
+    tr{
+        max-height: 48px!important;
+        height: 48px!important;
+    }
+}
+.tablehead{
+    padding: 14px !important;
+    margin: 0px;
+    border: none;
+    text-align: center;
+}
+tbody{
+    margin-top: 7px;
+}
+.filters{
+    display: flex;
+    align-items: center;
+}
+table{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: black;
+}
+.tname{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 36px;
+    font-family: "Lato",sans-serif;
+    font-weight: bold;
+    
+    img{
+        margin-right: 15px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        left: 100;
+    }
+}
+.tr60{
+    height: 60px;
+}
+td{
+ 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    color: #081735 !important;
+
+    p{
+        max-width: 150px;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         text-wrap: nowrap;
+    }
+
+}
+
+td img{ 
+    border-radius: 8px;
+}
+ td div{
+width: max-content;
+margin: auto;
+}
+
+.tablebottom{
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tablebottom select{
+  height: 40px;
+  font-size: 14px;
+  margin: 10px;
+  
+}
+

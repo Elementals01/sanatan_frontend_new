@@ -1,0 +1,130 @@
+.banner-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.user-banner{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+width: 100%;
+height: 100px;
+border-radius: 25px;
+margin-left: 50px;
+background-color: lightsalmon;
+justify-content: center;
+}
+.userpic-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: -140px;
+   justify-items: center;
+   align-items: center;
+
+   span{
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 20px;
+   }
+}
+.userpic-in-banner{
+    border: 3px solid white;
+    padding: 10px;
+width: 60px;
+height: 60px;
+border-radius: 100px;
+background-color: gray;
+
+}
+
+
+.user-cards-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.card-340{
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    width: 290px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 8px 16px 0px rgba(143, 149, 178, 0.15);
+    border-radius: 16px;
+    strong{
+        padding: 10px;
+        color: grey;
+    }
+}
+.card-700{
+    margin-bottom: 20px;
+    margin: 10px;
+    width: 700px;
+    padding: 10px;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 8px 16px 0px rgba(143, 149, 178, 0.15);
+    border-radius: 16px;
+    hr{
+        color: rgba(128, 128, 128, 0.267);
+    }
+    h1{
+        font-size: 24px;
+        margin-left: 15px;  
+        font-weight: bold;
+        
+    }
+}
+.user-card-desc{
+    font-size: 16px;
+    color: #8F95B2;
+    margin-left: 15px;
+}
+
+.users-sidebar-tab{
+   padding: 14px;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-top: 10px;
+   border-radius: 16px;
+   display: flex;
+   align-items: center;
+   background-color: rgba(255, 166, 0, 0.13);
+   span{
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 8px;
+   }
+}
+
+
+
+.user-info-card{
+    padding: 10px  0px  10px  20px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-info-card .user-info-item{
+    width: 320px;
+    margin-bottom:15px;
+    margin-top:10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    span{
+        margin-left: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

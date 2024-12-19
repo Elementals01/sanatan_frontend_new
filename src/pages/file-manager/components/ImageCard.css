@@ -1,0 +1,49 @@
+.Card-Image{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 20px;
+  width: 180px;
+  height: 240px;
+  overflow: hidden;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(143, 149, 178, 0.15);
+  /* border: 3px solid orange; */
+}
+.Card-Image .image-wrapper {
+position: relative;
+}
+.Card-Image .image-wrapper .image{
+  object-fit:fill;
+  width: 180px;
+  height: 210px;
+}
+.Card-Image .image-wrapper button{
+  position: absolute;
+  top: 0;
+  background-color: white;
+  right: 0;
+}
+.Card-Image_Title{
+  height: 30px;
+  width: 180px;
+  background-color: white;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+
+.overlay-img-button .img-select-btn{
+  top: 45%!important;
+  position: absolute;
+  left: 15%!important;
+  right: 15%!important;
+  color: white;
+  background-color: orange!important;
+  border: 2px solid rgba(151, 151, 151, 0.185);
+  border-radius: 15px;
+  padding: 5px;
+}
