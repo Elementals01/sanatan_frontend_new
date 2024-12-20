@@ -1,5 +1,13 @@
 # FROM node:alpine3.18 as build
 
+# declare build time environment variables
+ARG REACT_APP_ENV
+ARG REACT_APP_SERVER
+
+# set default values for build time environment variables
+ARG REACT_APP_ENV=$ARG_REACT_APP_ENV
+ARG REACT_APP_SERVER=$ARG_REACT_APP_SERVER
+
 FROM node:18-alpine as build
 
 # build react app
