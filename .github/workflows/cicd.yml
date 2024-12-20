@@ -14,7 +14,7 @@ jobs:
       - name: Login to docker hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker Image
-        run: docker build -t sunny01elementals/sanatandharamaya --build-arg REACT_APP_ENV='PRODUCTION' --build-arg REACT_APP_SERVER='${{secrets.REACT_APP_SERVER}}' .
+        run: docker build -t sunny01elementals/sanatandharamaya --build-arg REACT_APP_ENV='production' --build-arg REACT_APP_SERVER='https://api.sanatandharmaya.com/api/' .
       - name: Publish Image to docker hub
         run: docker push sunny01elementals/sanatandharamaya:latest
 
