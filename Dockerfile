@@ -8,7 +8,7 @@ ARG REACT_APP_SERVER
 ARG REACT_APP_ENV=$ARG_REACT_APP_ENV
 ARG REACT_APP_SERVER=$ARG_REACT_APP_SERVER
 
-FROM node:18-alpine as build
+FROM node:18-alpine as build 
 
 # build react app
 WORKDIR /app
